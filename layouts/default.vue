@@ -1,9 +1,9 @@
 <template>
   <div>
-    <header>
-      <nav>
-        <nuxt-link to="/">Jenjen Store</nuxt-link>
-        <ul>
+    <header class="shadow-sm bg-white">
+      <nav class="container mx-auto flex justify-between p-4">
+        <nuxt-link to="/" class="font-bold">Jenjen Store</nuxt-link>
+        <ul class="flex gap-4">
           <li>
             <nuxt-link to="/">Home</nuxt-link>
           </li>
@@ -18,12 +18,12 @@
     </header>
   </div>
 
-  <div>
-    <slot/>
+  <div class="container mx-auto p-4">
+    <slot />
   </div>
 </template>
 <style scoped>
-.router-link-exact-active{
-    color: #12b488;
+.router-link-exact-active {
+  color: #12b488;
 }
 </style>
