@@ -1,0 +1,1 @@
+# nuxt-simple-web-app
