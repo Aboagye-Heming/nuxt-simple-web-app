@@ -4,31 +4,34 @@
     <header class="shadow-md bg-white">
       <nav class="container mx-auto flex justify-between items-center p-4">
         <!-- Title Link -->
-        <nuxt-link 
-          to="/products" 
-          class="text-xl font-bold text-gray-800 hover:text-green-600 transition-colors">
+        <nuxt-link
+          to="/products"
+          class="text-xl font-bold text-gray-800 hover:text-green-600 transition-colors"
+        >
           Jenjen Store Products
         </nuxt-link>
         <!-- Navigation Links -->
         <div class="hidden md:flex">
-          <nuxt-link 
-            to="/" 
-            exact-active-class="text-green-600" 
-            class="text-gray-600 hover:text-green-600 transition-colors mx-4">
+          <nuxt-link
+            to="/"
+            exact-active-class="text-green-600"
+            class="text-gray-600 hover:text-green-600 transition-colors mx-4"
+          >
             Home
           </nuxt-link>
-          <nuxt-link 
-            to="/about" 
-            exact-active-class="text-green-600" 
-            class="text-gray-600 hover:text-green-600 transition-colors mx-4">
+          <nuxt-link
+            to="/about"
+            exact-active-class="text-green-600"
+            class="text-gray-600 hover:text-green-600 transition-colors mx-4"
+          >
             About
           </nuxt-link>
-          <nuxt-link 
+          <!-- <nuxt-link 
             to="/products" 
             exact-active-class="text-green-600" 
             class="text-gray-600 hover:text-green-600 transition-colors mx-4">
             Products
-          </nuxt-link>
+          </nuxt-link> -->
         </div>
       </nav>
     </header>
@@ -39,29 +42,34 @@
     </main>
 
     <!-- Footer Section (Navigation) -->
-    <nav class="container mx-auto flex justify-center items-center p-4 border-t-2 border-gray-200 bg-gray-50 md:hidden">
+    <nav
+      class="container mx-auto flex justify-center items-center p-4 border-t-2 border-gray-200 bg-gray-50 md:hidden"
+    >
       <ul class="flex gap-6">
         <li>
-          <nuxt-link 
-            to="/" 
-            exact-active-class="text-green-600" 
-            class="text-gray-600 hover:text-green-600 transition-colors">
+          <nuxt-link
+            to="/"
+            exact-active-class="text-green-600"
+            class="text-gray-600 hover:text-green-600 transition-colors"
+          >
             Home
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link 
-            to="/about" 
-            exact-active-class="text-green-600" 
-            class="text-gray-600 hover:text-green-600 transition-colors">
+          <nuxt-link
+            to="/about"
+            exact-active-class="text-green-600"
+            class="text-gray-600 hover:text-green-600 transition-colors"
+          >
             About
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link 
-            to="/products" 
-            exact-active-class="text-green-600" 
-            class="text-gray-600 hover:text-green-600 transition-colors">
+          <nuxt-link
+            to="/products"
+            exact-active-class="text-green-600"
+            class="text-gray-600 hover:text-green-600 transition-colors"
+          >
             Products
           </nuxt-link>
         </li>
@@ -107,7 +115,7 @@ nav {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  
+
   header .hidden {
     display: flex;
   }
