@@ -6,10 +6,15 @@
       culpa, sapiente ducimus possimus expedita quae sed delectus debitis
       repellat sequi! A similique natus veniam perferendis neque unde ea hic.
     </p>
+    <p>
+      {{ data.message }}
+    </p>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const { data } = await useFetch("/api/test");
+</script>
 
 <style scoped>
 h2 {
