@@ -2,21 +2,20 @@
   <div>
     <div class="grid grid-cols-4 gap-5">
       <div v-for="product in products">
-        <nuxt-link :to="`/products/${product.id}`">{{
-          product.title
-        }}</nuxt-link>
+        <ProductCard :product="product" />
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
+import ProductCard from "~/components/ProductCard.vue";
+
 definePageMeta({
   layout: "products",
 });
 
 const { data: products } = await useFetch("https://fakestoreapi.com/products");
-console.log(products);
 </script>
 
 <style scoped>
